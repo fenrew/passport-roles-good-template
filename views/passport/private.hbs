@@ -1,0 +1,15 @@
+<div>Private page</div>
+<div>
+  <ul>
+    {{#each user}}
+    <form action="/delete" method="POST">
+      <li>
+        {{this.username}}
+        <button type="submit"><a href="/private-page/delete/{{this._id}}">Delete</a></button>
+      </li>
+    </form>
+    {{/each}}
+  </ul>
+  <a href="/signup">Add</a>
+  <a href="/formal-page">Back</a>
+</div>

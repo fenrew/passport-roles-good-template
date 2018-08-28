@@ -1,0 +1,21 @@
+<h2>Signup</h2>
+
+<form action="/signup" method="POST" id="form-container">
+  <label for="username">Username</label>
+  <input type="text" name="username" placeholder="JonSnow">
+  <br><br>
+  <label for="password">Password</label>
+  <input type="password" name="password" placeholder="Your password">
+  <br>
+  <br>
+  <label for="role">Employee's role</label>
+  <input type="text" name="role" placeholder="ta / developer"> {{#if message}}
+  <div class="error-message">{{ message }}</div>
+  {{/if}}
+  <br><br>
+  <button>Create account</button>
+
+</form>
+<br>
+<br>
+<a href="/private-page">Private Page</a>
